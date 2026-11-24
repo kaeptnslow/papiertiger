@@ -249,13 +249,15 @@ p {
 }
 
 .screens {
-  margin-top: 36px;
+  margin-top: 28px;
 }
 
 .screen-row {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(4, 150px);
+  justify-content: space-evenly;
+  gap: 28px 20px;
+  margin-top: 8px;
 }
 
 .screen-row figure {
@@ -264,17 +266,18 @@ p {
 
 .screen-row img {
   display: block;
-  width: 100%;
+  width: 150px;
   height: auto;
-  border-radius: 22px;
+  border-radius: 18px;
   border: 1px solid var(--border);
-  box-shadow: var(--shadow);
+  box-shadow: 0 6px 18px rgba(17, 24, 39, 0.10);
 }
 
 .screen-row figcaption {
   margin-top: 10px;
   text-align: center;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
+  line-height: 1.35;
   font-weight: 600;
   color: var(--muted);
 }
@@ -300,7 +303,11 @@ p {
   }
 
   .screen-row {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, 140px);
+  }
+
+  .screen-row img {
+    width: 140px;
   }
 
   .main {

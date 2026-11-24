@@ -248,6 +248,37 @@ p {
   margin-top: 8px;
 }
 
+.screens {
+  margin-top: 36px;
+}
+
+.screen-row {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.screen-row figure {
+  margin: 0;
+}
+
+.screen-row img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 22px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.screen-row figcaption {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+
 .app-icon {
   display: block;
   width: 96px;
@@ -266,6 +297,10 @@ p {
 
   .grid.two {
     grid-template-columns: 1fr;
+  }
+
+  .screen-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .main {
